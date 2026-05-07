@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>10-Ruby</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+<script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+<py-config>
+packages = ["matplotlib"]
+</py-config>
+
+<style>
+body {
+    background: #f4f6f9;
+    margin: 0;
+}
+
+.navbar {
+    background: linear-gradient(to right, #2a6fdb, #3fa9f5);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab {
+    display: none;
+    padding: 20px;
+}
+
+.tab.active {
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card img {
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-body p {
+    font-size: 13px;
+    color: gray;
+    margin-top: -5px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <div><strong>10-Ruby</strong></div>
+    <div>
+        <button class="btn btn-light btn-sm" onclick="showTab('gallery')">Gallery</button>
+        <button class="btn btn-light btn-sm" onclick="showTab('classmates')">Classmates</button>
+        <button class="btn btn-light btn-sm" onclick="showTab('attendance')">Attendance</button>
+    </div>
+</div>
+
+<div id="gallery" class="tab active">
+
+<h2 class="mt-3">Classmates Gallery</h2>
+
+<div class="grid">
+
+<div class="card">
+    <img src="Ebti.jpg">
+    <div class="card-body">
+        <h5>Al Hazmi</h5>
+        <p>Filter with trio.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Aeiou.png">
+    <div class="card-body">
+        <h5>Alvarez</h5>
+        <p>his info.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="ethan.jpg">
+    <div class="card-body">
+        <h5>Belsa</h5>
+        <p>Dominating in vallyball like a goat.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Bernas.jpeg">
+    <div class="card-body">
+        <h5>Bernas</h5>
+        <p>doing science club</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Julianna.jpeg">
+    <div class="card-body">
+        <h5>Calaycay</h5>
+        <p>science club.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Ashlei.png">
+    <div class="card-body">
+        <h5>Castelo</h5>
+        <p>doing intrams.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Cruz.jpg">
+    <div class="card-body">
+        <h5>Cruz</h5>
+        <p>Dance performance on stage.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Ely.JPG">
+    <div class="card-body">
+        <h5>Defensor</h5>
+        <p>In class picture.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Luna.png">
+    <div class="card-body">
+        <h5>Dimasuhid</h5>
+        <p>class picture.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="mauri.png">
+    <div class="card-body">
+        <h5>Francisco</h5>
+        <p> group picture.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Ashlei.png">
+    <div class="card-body">
+        <h5>Hsu</h5>
+        <p>team picture.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Denise.jpg">
+    <div class="card-body">
+        <h5>Juatchon</h5>
+        <p>with friend.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="judah.jpg">
+    <div class="card-body">
+        <h5>Judge</h5>
+        <p>Christmas party.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Francis.png">
+    <div class="card-body">
+        <h5>Lilagan</h5>
+        <p>got into ust.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="SamL.jpg">
+    <div class="card-body">
+        <h5>Luna</h5>
+        <p>on stage.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Enzo.JPG">
+    <div class="card-body">
+        <h5>Macaranas</h5>
+        <p>jco.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="pain.jpeg">
+    <div class="card-body">
+        <h5>Mateo</h5>
+        <p>with band.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="ashley.jpg">
+    <div class="card-body">
+        <h5>Mondragon</h5>
+        <p>made drawings.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Lance.jpeg">
+    <div class="card-body">
+        <h5>Naldoza</h5>
+        <p>with friend group.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Gab.png">
+    <div class="card-body">
+        <h5>Natividad</h5>
+        <p>got voted as officer.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="sofia.png">
+    <div class="card-body">
+        <h5>Ng</h5>
+        <p> science club.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Hendrich.JPG">
+    <div class="card-body">
+        <h5>Ong</h5>
+        <p>in jco.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Trisha.jpg">
+    <div class="card-body">
+        <h5>Paz</h5>
+        <p>with friend.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="image2.jpg">
+    <div class="card-body">
+        <h5>Ramos, M.</h5>
+        <p>with friend group.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Queeny.JPG">
+    <div class="card-body">
+        <h5>Ramos, Q.</h5>
+        <p>on stage.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="SamR.PNG">
+    <div class="card-body">
+        <h5>Ramos, S.</h5>
+        <p>math olympiad.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Ashlei.png">
+    <div class="card-body">
+        <h5>Reodica</h5>
+        <p>with team.</p>
+    </div>
+</div>
+
+<div class="card">
+    <img src="Von.png">
+    <div class="card-body">
+        <h5>Repolona</h5>
+        <p>Badminton.</p>
+    </div>
+</div>
+
+</div>
+</div>
+
+<script>
+function showTab(tab) {
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    document.getElementById(tab).classList.add("active");
+}
+</script>
+
+</body>
+</html>
